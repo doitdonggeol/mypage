@@ -1,194 +1,90 @@
-<!doctype html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="김정윤 소개페이지">
+    <title>김정윤</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+  <body>
 
-    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
-    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-
-    * {
-    font-family: 'Gowun Dodum', sans-serif;
-    }
-    <style>
-        * {
-            font-family: 'Gowun Dodum', sans-serif;
-        }
-
-        .mytitle {
-            background-color: green;
-            color: white;
-            width: 100%;
-
-            height: 250px;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg");
-            background-position: center;
-            background-size: cover;
-
-
-            display: flex;
-            flex-direction: column;
-
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .mytitle>button {
-            width: 250px;
-            height: 50px;
-
-            background-color: transparent;
-
-
-            border-radius: 50px;
-            border: 1px solid white;
-            color: white;
-            margin-top: 20px;
-
-        }
-
-        .mytitle>button:hover {
-            border: 2px solid white;
-        }
-
-        .mycomment {
-            color: gray;
-
-        }
-
-        .mycards {
-            width: 1200px;
-            margin: 20px auto 20px auto;
-
-        }
-
-        .mypost {
-
-
-            width: 500px;
-            margin: 20px auto 20px auto;
-            padding: 20px 20px 20px 20px;
-
-            box-shadow: 0px 0px 7px 0px gray;
-        }
-
-        .mybuttons {
-
-            display: flex;
-            flex-direction: row;
-
-            align-items: center;
-            justify-content: center;
-            margin-top: 10px;
-
-            
-
-
-        }
-        .mybuttons > button {
-            margin-right : 10px;
-
-        }
-            
-        }
-    </style>
-</head>
-
-<body>
-    <div class="mytitle">
-        <h1>내 생애 최고의 영화들!</h1>
-        <button type="button" class="btn btn-primary">영화 기록하기</button>
-        <button>영화기록하기</button>
-    </div>
-    <div class="mypost">
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">영화 URL</label>
-        </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">코멘트</label>
-            <div class="mybuttons">
-                <button type="button" class="btn btn-dark">기록하기</button>
-                <button type="button" class="btn btn-outline-dark">닫기</button>
-            </div>
-        </div>
-
-    </div>
-    <div class="mycards">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">여기에 제목이 들어갑니다</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</P>
-                        <p class="mycomment">여기에 의견을 주세요.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">여기에 제목이 들어갑니다</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</P>
-                        <p class="mycomment">여기에 의견을 주세요.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">여기에 제목이 들어갑니다</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</P>
-                        <p class="mycomment">여기에 의견을 주세요.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">여기에 제목이 들어갑니다</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</P>
-                        <p class="mycomment">여기에 의견을 주세요.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">여기에 제목이 들어갑니다</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</P>
-                        <p class="mycomment">여기에 의견을 주세요.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="nav">
+      Kim JungYoon
+      <div class="top"><p id="myParagraph4">top</p></div>
+      <div class="nav-items">
+       <div class="nav-item"><p id="myParagraph3">sns</p></div>
+       <div class="nav-item"><p id="myParagraph2">activity</p></div>
+       <div class="nav-item"><p id="myParagraph">interest</p></div>
+       <div class="nav-item"><p><a href="http://mabieol3393.shop/lutein.html">lutein</a></p></div>
+      </div>
     </div>
 
-</body>
+    <div class="main">
 
+      <div class = "titles">
+       <div class="title">
+         폼생폼사
+       </div>
+
+       <div class="subtitle">
+         <h5>폼에 살고 폼에 죽는다는 말로 젝스키스의 타이틀 곡이다.</h5>
+       </div>
+      </div>
+
+      <div class="profile">
+
+<!--         <img src="https://i.imgur.com/aB93Wso.jpg" width="200px" height="200px" /> -->
+
+        <ol class = "in_profile">
+         <li>Name : JungYoon Kim</li>
+         <li>Birth : 1986.03.14</li>
+         <li>Nationality : Republic of Korea</li>
+         <li>Education : Pusan University</li>
+        </ol>
+      </div>
+    </div>
+    <p class = "below_in_profile"><!--*--></p>
+    <div id="bottom"><!-- 여기로 스크롤 하겠습니다. 여기는 "interest"입니다.--></div>
+    <p class = "below_interest">*</p>
+    <ol>
+        <li>스즈모리 레무</li>
+        <li>아오이 츠카사</li>
+        <li>카스이 준</li>
+        <li>등등.</li>
+        <li>코딩</li>
+        <li>웹페이지</li>
+        <li>수학</li>
+        <li>미분적분학</li>
+        <li>카카오뮤직</li>
+        <li>안드로이드폰</li>
+        <li>아이폰</li>
+        <li>엄마</li>
+    </ol>
+    <p class = "below_bottom"><!--*--></p>
+    <div id="bottom2"><!--여기로 스크롤 하겠습니다. 여기는 "sns"입니다.--></div>
+    <p class = "below_sns">*</p>
+    <ol>
+        <li>facebook khyphenondot0@gmail.com</li>
+        <li>instagram jeongyun9777</li>
+        <li>X.com @jyoonk8im</li>
+        <li>Line mabieol3393</li>
+        <li>kakao.com q6userlgko@kakao.com</li>
+    </ol>
+    <p class = "below_bottom2"><!--*--></p>
+    <div id="bottom3"><!--여기로 스크롤 하겠습니다. 여기는 "activity"입니다.--></div>
+    <p class = "below_activity">*</p>
+    <ol>
+        <li>근무약사 근무중(곧 퇴사할 예정)</li>
+        <li>운동 하루에 7000보씩 걷는다.</li>
+        <li>식사는 병원 식당에서 균형잡힌 식사를 한다.</li>
+        <li>종교는 너무 빠져 하지 않는다.</li>
+    </ol>
+    <p class = "below_activity_s_bottom"><!--*--></p>
+    <script src="app.js">
+
+
+
+    </script>
+  </body>
 </html>
